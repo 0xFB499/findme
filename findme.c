@@ -33,7 +33,7 @@ int main(int argc, char *argv[]){
 		#define print(off) printf("byte 0x%x: ...%X...\n", c+off, x)
 		if(test(12, x) || test(8, x)){
 			t++;
-			pri(-2);
+			print(-2);
 		}else if(test(4, x) || test(0, x)){
 			t++;
 			s++;
